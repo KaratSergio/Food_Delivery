@@ -1,0 +1,50 @@
+:root {
+  --mt_color: #2c2c2c;
+  --b_color: #fefefe;
+  --white: #ffffff;
+  --green: #7eb101;
+  --light_green: #bbf330;
+  --yellow: #ffe550;
+  --text_nav: #000000;
+  --input_sub: #505050;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--mt_color);
+  background-color: var(--b_color);
+}
+
+.container {
+  max-width: 320px;
+  padding: 0 20px;
+  border: 1px solid red;
+  margin: auto;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+    url('../fonts/Roboto-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+    url('../fonts/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+    url('../fonts/PlayfairDisplay-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

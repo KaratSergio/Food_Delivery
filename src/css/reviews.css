@@ -1,0 +1,37 @@
+/* .reviews {
+}
+.container {
+} */
+.reviews-title {
+  font-size: 28px;
+  font-weight: 700;
+  padding-top: 60px;
+}
+.reviews-text {
+  font-size: 14px;
+  line-height: 1.42;
+  padding-top: 14px;
+}
+/* .reviews-list {
+} */
+.reviews-stars-img {
+  margin-top: 41px;
+}
+.reviews-text-comment {
+  font-size: 16px;
+  font-weight: 700;
+  padding-top: 8px;
+}
+.reviews-img {
+  margin-top: 25px;
+}
+.reviews-card-box {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-top: 16px;
+}
+.reviews-user-border {
+  border-right: 2px solid var(--light_green);
+  padding-right: 15px;
+}

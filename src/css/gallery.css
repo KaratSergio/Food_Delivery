@@ -1,0 +1,34 @@
+/* .gallery {
+}
+.container {
+} */
+.gallery-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  padding-top: 60px;
+}
+.gallery-text {
+  font-size: 14px;
+  line-height: 1.42;
+  padding-top: 16px;
+}
+.gallery-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+/* .gallery-item {
+} */
+
+.gallery-border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+  height: 282px;
+  border: 11px solid var(--yellow);
+  border-radius: 50%;
+}

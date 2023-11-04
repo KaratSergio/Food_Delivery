@@ -1,0 +1,56 @@
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-nav {
+  display: none;
+}
+.header-list-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+/* BURGER MENU */
+
+.menu-toggle {
+  display: flex;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+/* .menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+} */
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 148px;
+
+  width: 170px;
+  height: 311px;
+  padding: 16px;
+  border-bottom-left-radius: 20px;
+  background-color: var(--light_green);
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+.menu-container.is-open {
+  display: flex;
+  transform: translateX(0);
+}
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
