@@ -49,6 +49,11 @@
   border-radius: 30px;
   border: 2px solid var(--green);
   background-color: var(--white);
+  transition: border-color 1.2s;
+}
+.description-btn:hover,
+.description-btn:focus {
+  border-color: var(--yellow);
 }
 .description-link {
   font-size: 13.7px;

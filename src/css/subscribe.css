@@ -37,6 +37,12 @@
   margin-bottom: 60px;
   margin-top: 20px;
   padding: 11px 22px;
+  border: transparent;
   border-radius: 30px;
   background-color: var(--light_green);
+  transition: background-color 1.2s;
+}
+.sub-btn:hover,
+.sub-btn:focus {
+  background-color: var(--yellow);
 }

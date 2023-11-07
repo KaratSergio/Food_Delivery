@@ -29,6 +29,11 @@
     font-size: 14px;
     font-weight: 500;
   }
+  .footer-nav-link:hover,
+  .footer-nav-link:focus {
+    color: var(--green);
+    font-size: 15px;
+  }
   .footer-text {
     font-size: 14px;
     font-weight: 500;
@@ -59,7 +64,12 @@
     border-radius: 30px;
     border: 0.854px solid var(--green);
     background-color: var(--white);
+    transition: border-color 1.2s;
     margin-top: 20px;
+  }
+  .footer-btn:hover,
+  .footer-btn:focus {
+    border-color: var(--yellow);
   }
   .footer-text-policy {
     font-size: 10px;

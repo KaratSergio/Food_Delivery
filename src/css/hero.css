@@ -24,7 +24,14 @@
   align-items: center;
   border-radius: 30px;
   background-color: var(--light_green);
+  transition: background-color 1.2s;
+  border: transparent;
 }
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--yellow);
+}
+
 .hero-img {
   margin: auto;
 }
@@ -54,9 +61,7 @@
   width: 320px;
   height: 450px;
   background-color: var(--yellow);
-
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
-
   border-radius: 30px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -75,6 +80,10 @@
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop-btn:hover,
+.backdrop-btn:focus {
+  background-color: var(--light_green);
 }
 /* MODAL-FORM */
 .modal-title {
@@ -126,4 +135,9 @@
   border-radius: 30px;
   border: 2px solid var(--green);
   margin: auto;
+  transition: background-color 1.2s;
+}
+.modal-form-btn:hover,
+.modal-form-btn:focus {
+  background-color: var(--light_green);
 }
