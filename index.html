@@ -8,14 +8,14 @@
   <title>Minimal</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css" />
   
-  <script type="module" crossorigin src="/Food_Delivery/assets/index-8316ba67.js"></script>
-  <link rel="stylesheet" href="/Food_Delivery/assets/index-e4d28e02.css">
+  <script type="module" crossorigin src="/Food_Delivery/assets/index-e8908323.js"></script>
+  <link rel="stylesheet" href="/Food_Delivery/assets/index-e5d1f228.css">
 </head>
 
 <body>
   <header class="header container">
-  <svg class="mob-menu-icon" width="66" height="52">
-    <use href="/Food_Delivery/assets/icons-f939104a.svg#icon-logo"></use>
+  <svg class="header-logo" width="66" height="52">
+    <use href="/Food_Delivery/assets/icons-2ae34f32.svg#icon-logo"></use>
   </svg>
   <button
     type="button"
@@ -24,53 +24,84 @@
     aria-controls="mobile-menu"
   >
     <svg class="mob-menu-icon" width="24" height="24">
-      <use href="/Food_Delivery/assets/icons-f939104a.svg#icon-menu"></use>
+      <use href="/Food_Delivery/assets/icons-2ae34f32.svg#icon-menu"></use>
     </svg>
   </button>
   <!-- close btn -->
   <div class="menu-container js-menu-container" id="mobile-menu">
     <button type="button" class="menu-toggle js-close-menu">
       <svg class="mob-menu-icon" width="16" height="16">
-        <use href="/Food_Delivery/assets/icons-f939104a.svg#icon-x"></use>
+        <use href="/Food_Delivery/assets/icons-2ae34f32.svg#icon-x"></use>
       </svg>
     </button>
-    <ul class="header-list-nav">
-      <li class="header-item-nav">
-        <a class="header-nav-link" href="#">Home</a>
-      </li>
-      <li class="header-item-nav">
-        <a class="header-nav-link" href="#">About</a>
-      </li>
-      <li class="header-item-nav">
-        <a class="header-nav-link" href="#">Service</a>
-      </li>
-      <li class="header-item-nav">
-        <a class="header-nav-link" href="#">Menu</a>
-      </li>
-      <li class="header-item-nav">
-        <a class="header-nav-link" href="#">Contact</a>
-      </li>
-    </ul>
+    <nav class="header-nav">
+      <ul class="header-list-nav">
+        <li class="header-item-nav">
+          <a class="header-nav-link" href="#">Home</a>
+        </li>
+        <li class="header-item-nav">
+          <a class="header-nav-link" href="#">About</a>
+        </li>
+        <li class="header-item-nav">
+          <a class="header-nav-link" href="#">Service</a>
+        </li>
+        <li class="header-item-nav">
+          <a class="header-nav-link" href="#">Menu</a>
+        </li>
+        <li class="header-item-nav">
+          <a class="header-nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <button type="button" class="header-btn">Order Now</button>
   </div>
 </header>
 
   <main>
     <section class="hero container">
     <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
-    <p class="hero-text">
-      With just a few clicks, you can have your favorite meals delivered
-      straight to your doorstep, no matter where you are. Order now and
-      enjoy a hassle-free and delicious meal from the comfort of your own
-      home.
-    </p>
+    <div class="hero-box">
+      <div>
+        <p class="hero-text">
+          With just a few clicks, you can have your favorite meals delivered
+          straight to your doorstep, no matter where you are. Order now and
+          enjoy a hassle-free and delicious meal from the comfort of your own
+          home.
+        </p>
+        <button type="button" class="hero-btn" data-modal-open>Order Now</button>
+      </div>
+      <div class="slider-box">
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide"><img src="/Food_Delivery/assets/teftel-b9fb005c.png" width="292" height="292" alt="teftel"></div>
+            <div class="slide"><img src="/Food_Delivery/assets/salat-e6672621.png" width="292" height="292" alt="salat"></div>
+            <div class="slide"><img src="/Food_Delivery/assets/gamburger-dd8c0228.png" width="292" height="292" alt="gamburger"></div>
+            <div class="slide"><img src="/Food_Delivery/assets/chicken-de184227.png" width="292" height="292" alt="chicken"></div>
+            <div class="slide"><img src="/Food_Delivery/assets/borshch-e5e8abdf.png" width="292" height="292" alt="borshch"></div>
+            <div class="slide"><img src="/Food_Delivery/assets/pizza-c26c6859.png" width="292" height="292" alt="pizza"></div>
+            <div class="slide"><img src="/Food_Delivery/assets/pasta-0af2aa26.png" width="292" height="292" alt="pasta"></div>
+            <div class="slide"><img src="/Food_Delivery/assets/zelen-302a5e69.png" width="292" height="292" alt="zelen"></div>
+            <div class="slide"><img src="/Food_Delivery/assets/chris-feb91e14.png" width="292" height="292" alt="salata"></div>
+          </div>
+        </div>
+        <button class="slider-btn-left" type="button" id="prevBtn">
+          <svg class="icon-slider" width="37" height="32">
+            <use href="/Food_Delivery/assets/icons-2ae34f32.svg#icon-left"></use>
+          </svg>
+        </button>
+        <button class="slider-btn-right" type="button" id="nextBtn">
+          <svg class="icon-slider" width="37" height="32">
+            <use href="/Food_Delivery/assets/icons-2ae34f32.svg#icon-right"></use>
+          </svg></button>
+      </div>
+    </div>
 
-    <button type="button" class="hero-btn" data-modal-open>Order Now</button>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="backdrop-btn" data-modal-close>
           <svg class="mob-menu-icon" width="16" height="16">
-            <use href="/Food_Delivery/assets/icons-f939104a.svg#icon-x"></use>
+            <use href="/Food_Delivery/assets/icons-2ae34f32.svg#icon-x"></use>
           </svg>
         </button>
       <h2 class="modal-title">Order Form</h2>
@@ -86,7 +117,7 @@
               placeholder="Your name"
             />
             <svg class="modal-input-icon" width="18" height="24">
-              <use href="/Food_Delivery/assets/icons-f939104a.svg#icon-person"></use>
+              <use href="/Food_Delivery/assets/icons-2ae34f32.svg#icon-person"></use>
             </svg>
           </div>
         </div>
@@ -95,7 +126,7 @@
           <div class="modal-input-box">
             <input class="modal-input" type="tel" id="phone" name="phone" placeholder="+38(0_ _) _ _ _   _ _   _ _" />
             <svg class="modal-input-icon" width="18" height="24">
-              <use href="/Food_Delivery/assets/icons-f939104a.svg#icon-phone"></use>
+              <use href="/Food_Delivery/assets/icons-2ae34f32.svg#icon-phone"></use>
             </svg>
           </div>
         </div>
@@ -104,7 +135,7 @@
           <div class="modal-input-box">
             <input class="modal-input" type="email" id="email" name="email" placeholder="example@gmail.com" />
             <svg class="modal-input-icon" width="18" height="24">
-              <use href="/Food_Delivery/assets/icons-f939104a.svg#icon-email"></use>
+              <use href="/Food_Delivery/assets/icons-2ae34f32.svg#icon-email"></use>
             </svg>
           </div>
         </div>
@@ -114,12 +145,11 @@
 
       </div>
     </div>
-
-    <img class="hero-img" src="/Food_Delivery/assets/apple-05a199d0.png" alt="apple" />
   </section>
 
     
 <section class="description container">
+  <img class="apple-img" src="/Food_Delivery/assets/apple-05a199d0.png" alt="apple" />
     <h2 class="description-title">What’s Special About Our Offerings</h2>
     <p class="description-text">
       With our platform, you can browse through a diverse selection of
@@ -130,7 +160,7 @@
       <li class="description-item">
         <div class="box-item">
           <svg class="description-img" width="32" height="32">
-            <use href="/Food_Delivery/assets/icons-f939104a.svg#icon-rocket"></use>
+            <use href="/Food_Delivery/assets/icons-2ae34f32.svg#icon-rocket"></use>
           </svg>
           <h3 class="description-card-title">Fasest Delivery</h3>
         </div>
@@ -142,7 +172,7 @@
       <li class="description-item">
         <div class="box-item">
           <svg class="description-img" width="32" height="32">
-            <use href="/Food_Delivery/assets/icons-f939104a.svg#icon-touch"></use>
+            <use href="/Food_Delivery/assets/icons-2ae34f32.svg#icon-touch"></use>
           </svg>
           <h3 class="description-card-title">Easy to order</h3>
         </div>
@@ -154,10 +184,10 @@
       </li>
     </ul>
     <div class="description-box">
-      <button class="description-btn">Order Now</button>
-      <a class="description-link" href="">Read More</a>
+      <button type="button" class="description-btn">Order Now</button>
+      <a class="description-link" href="#">Read More</a>
       <svg class="description-link-img" width="14" height="14">
-        <use href="/Food_Delivery/assets/icons-f939104a.svg#icon-arrow"></use>
+        <use href="/Food_Delivery/assets/icons-2ae34f32.svg#icon-arrow"></use>
       </svg>
     </div>
   </section>
@@ -170,14 +200,14 @@
     <ul class="gallery-list">
       <div class="gallery-border">
         <li class="gallery-item">
-          <img src="/Food_Delivery/assets/gamburger-7ea4130e.png" alt="" />
+          <img src="/Food_Delivery/assets/gamburger-dd8c0228.png" alt="" />
         </li>
       </div>
       <div class="gallery-border">
-        <li class="gallery-item"><img src="/Food_Delivery/assets/pasta-709e804a.png" alt="" /></li>
+        <li class="gallery-item"><img src="/Food_Delivery/assets/pasta-0af2aa26.png" alt="" /></li>
       </div>
       <div class="gallery-border">
-        <li class="gallery-item"><img src="/Food_Delivery/assets/pizza-68736e8e.png" alt="" /></li>
+        <li class="gallery-item"><img src="/Food_Delivery/assets/pizza-c26c6859.png" alt="" /></li>
       </div>
     </ul>
   </section>
@@ -192,7 +222,7 @@
       <li class="reviews-list">
         <div>
           <svg class="reviews-stars-img" width="101" height="16">
-            <use href="/Food_Delivery/assets/icons-f939104a.svg#icon-stars"></use>
+            <use href="/Food_Delivery/assets/icons-2ae34f32.svg#icon-stars"></use>
           </svg>
 
           <p class="reviews-text-comment">
@@ -212,7 +242,7 @@
       <li class="reviews-list">
         <div>
           <svg class="reviews-stars-img" width="101" height="16">
-            <use href="/Food_Delivery/assets/icons-f939104a.svg#icon-stars"></use>
+            <use href="/Food_Delivery/assets/icons-2ae34f32.svg#icon-stars"></use>
           </svg>
 
           <p class="reviews-text-comment">
@@ -256,7 +286,7 @@
   <footer class="footer container">
   <div class="footer-nav-box">
     <svg class="footer-logo-icon" width="69" height="51">
-      <use href="/Food_Delivery/assets/icons-f939104a.svg#icon-logo"></use>
+      <use href="/Food_Delivery/assets/icons-2ae34f32.svg#icon-logo"></use>
     </svg>
     <nav class="footer-nav">
       <ul class="footer-list-nav">
