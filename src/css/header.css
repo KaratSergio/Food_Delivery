@@ -118,8 +118,8 @@
     transition: background-color 1.2s;
     border: transparent;
   }
-  .hero-btn:hover,
-  .hero-btn:focus {
+  .header-btn:hover,
+  .header-btn:focus {
     background-color: var(--yellow);
   }
 }
