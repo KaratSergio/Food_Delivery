@@ -6,6 +6,7 @@
   font-size: 28px;
   font-weight: 700;
   padding-top: 40px;
+  line-height: 1.2;
 }
 .hero-text {
   font-size: 14px;
@@ -17,7 +18,6 @@
   font-weight: 500;
   line-height: 1.5;
   margin-top: 32px;
-  margin-bottom: 67px;
   display: inline-flex;
   padding: 6px 18px;
   justify-content: center;
@@ -140,4 +140,74 @@
 .modal-form-btn:hover,
 .modal-form-btn:focus {
   background-color: var(--light_green);
+}
+
+@media screen and (min-width: 768px) {
+
+  .hero-title {
+width: 480px;
+font-size: 42px;
+  }
+  .hero-box{
+    display: flex;
+    justify-content: space-between;
+  }
+  .hero-text {
+width: 336px;
+font-size: 16px;
+line-height: 1.5;
+  }
+
+  .slider-container {
+    display: flex;
+    align-items: center;
+    width: 325px;
+    height: 325px;
+    overflow: hidden;
+    position: relative;
+    border: 14px solid var(--yellow);
+    border-radius: 50%;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s;
+  }
+  
+  .slide {
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .slider-btn-left {
+    position: absolute;
+    top: 135px;
+    left: -15px;
+    z-index: 999;
+    height: 32px;
+    width: 40px;
+    padding: 2px;
+    background-color: transparent;
+    border: none;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.06))
+    
+  }
+  .slider-btn-right {
+    position: absolute;
+    top: 135px;
+    left: 295px;
+    z-index: 999;
+    height: 32px;
+    width: 38px;
+    padding: 2px;
+    background-color: transparent;
+    border: none;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.06))
+  }
+.slider-box {
+  position: relative;
+  margin-right: 20px;
+}
+
 }

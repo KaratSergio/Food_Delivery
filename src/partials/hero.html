@@ -1,13 +1,41 @@
 <section class="hero container">
     <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
-    <p class="hero-text">
-      With just a few clicks, you can have your favorite meals delivered
-      straight to your doorstep, no matter where you are. Order now and
-      enjoy a hassle-free and delicious meal from the comfort of your own
-      home.
-    </p>
+    <div class="hero-box">
+      <div>
+        <p class="hero-text">
+          With just a few clicks, you can have your favorite meals delivered
+          straight to your doorstep, no matter where you are. Order now and
+          enjoy a hassle-free and delicious meal from the comfort of your own
+          home.
+        </p>
+        <button type="button" class="hero-btn" data-modal-open>Order Now</button>
+      </div>
+      <div class="slider-box">
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide"><img src="./img/teftel.png" width="292" height="292" alt="teftel"></div>
+            <div class="slide"><img src="./img/salat.png" width="292" height="292" alt="salat"></div>
+            <div class="slide"><img src="./img/gamburger.png" width="292" height="292" alt="gamburger"></div>
+            <div class="slide"><img src="./img/chicken.png" width="292" height="292" alt="chicken"></div>
+            <div class="slide"><img src="./img/borshch.png" width="292" height="292" alt="borshch"></div>
+            <div class="slide"><img src="./img/pizza.png" width="292" height="292" alt="pizza"></div>
+            <div class="slide"><img src="./img/pasta.png" width="292" height="292" alt="pasta"></div>
+            <div class="slide"><img src="./img/zelen.png" width="292" height="292" alt="zelen"></div>
+            <div class="slide"><img src="./img/chris.png" width="292" height="292" alt="salata"></div>
+          </div>
+        </div>
+        <button class="slider-btn-left" type="button" id="prevBtn">
+          <svg class="icon-slider" width="37" height="32">
+            <use href="./img/icons.svg#icon-left"></use>
+          </svg>
+        </button>
+        <button class="slider-btn-right" type="button" id="nextBtn">
+          <svg class="icon-slider" width="37" height="32">
+            <use href="./img/icons.svg#icon-right"></use>
+          </svg></button>
+      </div>
+    </div>
 
-    <button type="button" class="hero-btn" data-modal-open>Order Now</button>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -57,6 +85,4 @@
 
       </div>
     </div>
-
-    <img class="hero-img" src="./img/apple.png" alt="apple" />
   </section>
