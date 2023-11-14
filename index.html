@@ -8,8 +8,8 @@
   <title>Minimal</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css" />
   
-  <script type="module" crossorigin src="/Food_Delivery/assets/index-0c3c1d3e.js"></script>
-  <link rel="stylesheet" href="/Food_Delivery/assets/index-6507993b.css">
+  <script type="module" crossorigin src="/Food_Delivery/assets/index-abc59910.js"></script>
+  <link rel="stylesheet" href="/Food_Delivery/assets/index-0c7da22e.css">
 </head>
 
 <body>
@@ -53,7 +53,7 @@
         </li>
       </ul>
     </nav>
-    <button type="button" class="header-btn">Order Now</button>
+    <button type="button" class="header-btn"  data-modal-open>Order Now</button>
   </div>
 </header>
 
@@ -74,10 +74,10 @@
         <div class="slider-container">
           <div class="slider">
             <div class="slide"><img src="/Food_Delivery/assets/teftel-b9fb005c.png" width="292" height="292" alt="teftel"></div>
-            <div class="slide"><img src="/Food_Delivery/assets/salat-e6672621.png" width="292" height="292" alt="salat"></div>
-            <div class="slide"><img src="/Food_Delivery/assets/gamburger-dd8c0228.png" width="292" height="292" alt="gamburger"></div>
-            <div class="slide"><img src="/Food_Delivery/assets/chicken-de184227.png" width="292" height="292" alt="chicken"></div>
-            <div class="slide"><img src="/Food_Delivery/assets/borshch-e5e8abdf.png" width="292" height="292" alt="borshch"></div>
+            <div class="slide"><img src="/Food_Delivery/assets/salat-99af1b4f.png" width="292" height="292" alt="salat"></div>
+            <div class="slide"><img src="/Food_Delivery/assets/gamburger-edee38e7.png" width="292" height="292" alt="gamburger"></div>
+            <div class="slide"><img src="/Food_Delivery/assets/chicken-bb46cf17.png" width="292" height="292" alt="chicken"></div>
+            <div class="slide"><img src="/Food_Delivery/assets/borshch-077a4cda.png" width="292" height="292" alt="borshch"></div>
             <div class="slide"><img src="/Food_Delivery/assets/pizza-c26c6859.png" width="292" height="292" alt="pizza"></div>
             <div class="slide"><img src="/Food_Delivery/assets/pasta-0af2aa26.png" width="292" height="292" alt="pasta"></div>
             <div class="slide"><img src="/Food_Delivery/assets/zelen-302a5e69.png" width="292" height="292" alt="zelen"></div>
@@ -200,14 +200,23 @@
     <ul class="gallery-list">
       <div class="gallery-border">
         <li class="gallery-item">
-          <img src="/Food_Delivery/assets/gamburger-dd8c0228.png" alt="" />
+          <img width="315" height="315" src="/Food_Delivery/assets/gamburger-edee38e7.png" alt="burger" />
         </li>
       </div>
       <div class="gallery-border">
-        <li class="gallery-item"><img src="/Food_Delivery/assets/pasta-0af2aa26.png" alt="" /></li>
+        <li class="gallery-item"><img width="315" height="315" src="/Food_Delivery/assets/pasta-0af2aa26.png" alt="pasta" /></li>
       </div>
       <div class="gallery-border">
-        <li class="gallery-item"><img src="/Food_Delivery/assets/pizza-c26c6859.png" alt="" /></li>
+        <li class="gallery-item"><img width="315" height="315" src="/Food_Delivery/assets/pizza-c26c6859.png" alt="pizza" /></li>
+      </div>
+      <div class="gallery-border gallery-tab">
+        <li class="gallery-item"><img width="315" height="315" src="/Food_Delivery/assets/chicken-bb46cf17.png" alt="chicken" /></li>
+      </div>
+      <div class="gallery-border gallery-tab">
+        <li class="gallery-item"><img width="315" height="315" src="/Food_Delivery/assets/salat-99af1b4f.png" alt="salat" /></li>
+      </div>
+      <div class="gallery-border gallery-tab">
+        <li class="gallery-item"><img width="315" height="315" src="/Food_Delivery/assets/borshch-077a4cda.png" alt="borshch" /></li>
       </div>
     </ul>
   </section>
@@ -218,7 +227,7 @@
     <p class="reviews-text">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     </p>
-    <ul class="reviews-list">
+    <ul class="reviews-list-box">
       <li class="reviews-list">
         <div>
           <svg class="reviews-stars-img" width="101" height="16">
@@ -260,11 +269,11 @@
         </div>
       </li>
     </ul>
-    <img class="reviews-img" src="/Food_Delivery/assets/banana-587e5c02.png" alt="banana" />
   </section>
 
     
 <section class="subscribe container">
+  <div class="sub-box-img"><img width="608" height="266" class="subscribe-img" src="/Food_Delivery/assets/banana-8c5490e4.png" alt="banana" /></div>
     <h2 class="sub-title">Subscribe To Get Special Offers</h2>
     <p class="sub-text">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
@@ -309,30 +318,34 @@
     </nav>
   </div>
   <p class="footer-text">Subscribe</p>
-  <input
-    class="footer-input"
-    type="text"
-    name="Subscribe"
-    id=""
-    placeholder="Enter your email"
-  />
-  <button class="footer-btn">Subscribe</button>
+  <div class="footer-input-box">
+    <input
+      class="footer-input"
+      type="text"
+      name="Subscribe"
+      id=""
+      placeholder="Enter your email"
+    />
+    <button class="footer-btn">Subscribe</button>
+  </div>
   <p class="footer-text-policy">
     By subscribing you agree to with our
     <span><a class="footer-item-link" href="#">Privacy Policy</a></span>
   </p>
-  <ul class="footer-list">
-    <li class="footer-item">
-      <a class="footer-item-link" href="#">Privacy Policy</a>
-    </li>
-    <li class="footer-item">
-      <a class="footer-item-link" href="#">Terms of Service</a>
-    </li>
-    <li class="footer-item">
-      <a class="footer-item-link" href="#">Cookies Settings</a>
-    </li>
-  </ul>
-  <p class="footer-text-bot">2022 FoodSta. All right reserved.</p>
+  <div class="footer-policy-box">
+    <ul class="footer-list">
+      <li class="footer-item">
+        <a class="footer-item-link" href="#">Privacy Policy</a>
+      </li>
+      <li class="footer-item">
+        <a class="footer-item-link" href="#">Terms of Service</a>
+      </li>
+      <li class="footer-item">
+        <a class="footer-item-link" href="#">Cookies Settings</a>
+      </li>
+    </ul>
+    <p class="footer-text-bot">2022 FoodSta. All right reserved.</p>
+  </div>
 </footer>
   
 </body>
