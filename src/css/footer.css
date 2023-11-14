@@ -3,7 +3,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 0px -4px 24px 0px rgba(105, 105, 105, 0.1);
-    margin-bottom: 300px;
   }
   /* .container {
   } */
@@ -93,3 +92,51 @@
     padding-top: 40px;
     padding-bottom: 60px;
   }
+
+  @media screen and (min-width: 768px) {
+
+    .footer {
+      background-image: url(/img/footer_tab.png);
+      background-size: auto;
+      background-position: bottom;
+    }
+    .footer-list-nav {
+      flex-direction: row;
+      gap: 20px;
+    }
+    .footer-nav-box {
+     align-items: center;
+     gap: 114px;
+     margin-top: 100px;
+    }
+    .footer-input-box {
+      display: flex;
+      gap: 13px;
+    }
+    .footer-btn {
+      margin-top: 0;
+      height: 42px;
+  }
+  .footer-text-policy {
+    font-size: 12px;
+    padding-top: 10px;
+  }
+  .footer-policy-box {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    justify-content: space-between;
+  }
+
+  .footer-list {
+    padding-top: 0;
+  }
+  .footer-item-link {
+    font-size: 12px;
+  }
+  .footer-text-bot {
+    padding-bottom: 0;
+    padding-top: 0;
+    font-size: 12px;
+  }
+}

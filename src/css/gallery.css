@@ -32,3 +32,40 @@
   border: 11px solid var(--yellow);
   border-radius: 50%;
 }
+
+.gallery-tab {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-title {
+    font-size: 42px;
+  }
+  .gallery-text {
+    font-size: 16px;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .gallery-tab {
+    display: flex;
+  }
+
+  .gallery-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+  .gallery-border {
+    width: 334px;
+    height: 338px;
+    border: 14px solid var(--yellow);
+  }
+
+  .gallery-item {
+    max-width: 280px;
+  }
+}

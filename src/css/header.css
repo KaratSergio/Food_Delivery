@@ -122,6 +122,11 @@
   .header-btn:focus {
     background-color: var(--yellow);
   }
+  .header-nav-link:hover,
+.header-nav-link:focus {
+  color: var(--light_green);
+  font-size: 17px;
+}
 }
 
 

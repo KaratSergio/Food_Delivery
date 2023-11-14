@@ -12,8 +12,7 @@
   line-height: 1.42;
   padding-top: 14px;
 }
-/* .reviews-list {
-} */
+
 .reviews-stars-img {
   margin-top: 41px;
 }
@@ -21,9 +20,6 @@
   font-size: 16px;
   font-weight: 700;
   padding-top: 8px;
-}
-.reviews-img {
-  margin-top: 25px;
 }
 .reviews-card-box {
   display: flex;
@@ -34,4 +30,27 @@
 .reviews-user-border {
   border-right: 2px solid var(--light_green);
   padding-right: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-title {
+    font-size: 42px;
+  }
+  .reviews-text {
+    font-size: 16px;
+    padding-top: 20px;
+  }
+  .reviews-list-box{
+    display: flex;
+    gap: 44px;
+  }
+  .reviews-list {
+    width: 336px;
+}
+.reviews-text-comment {
+  font-size: 18px;
+  padding-top: 18px;
+  padding-bottom: 20px;
+  width: 312px;
+}
 }

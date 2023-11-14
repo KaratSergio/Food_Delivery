@@ -186,7 +186,6 @@
     position: absolute;
     top: 135px;
     left: -15px;
-    z-index: 999;
     height: 32px;
     width: 40px;
     padding: 2px;
@@ -197,8 +196,7 @@
   .slider-btn-right {
     position: absolute;
     top: 135px;
-    left: 295px;
-    z-index: 999;
+    left: 301px;
     height: 32px;
     width: 38px;
     padding: 2px;
