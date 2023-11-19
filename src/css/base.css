@@ -18,8 +18,9 @@ body {
 .container {
   max-width: 320px;
   padding: 0 20px;
-  /* border: 1px solid red; */
   margin: auto;
+  border-left: 4px solid rgba(105, 105, 105, 0.02);
+  border-right: 4px solid rgba(105, 105, 105, 0.02);
 }
 @media screen and (min-width: 768px)  {
   .container {

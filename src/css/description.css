@@ -1,13 +1,30 @@
-/* .description {
-
+.description-box-img {
+  position: relative;
+  width: 200px;
 }
-.container {
-} */
 
 .apple-img {
+  position: relative;
   margin: auto;
   padding-top: 60px;
+  z-index: 1;
 }
+
+.shadow-apple-img::before {
+  content: "";
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 130px;
+  height: 45px;
+  background: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0.2) 100%);
+  filter: blur(6.61818265914917px);
+  border-radius: 50%;
+  z-index: 0; 
+}
+
+
 
 .description-title {
   font-size: 28px;
@@ -20,10 +37,6 @@
   line-height: 1.42;
   padding-top: 20px;
 }
-/* .description-list {
-} */
-/* .description-item {
-} */
 .description-img {
   margin-right: 4px;
 }
@@ -69,15 +82,12 @@
   line-height: 1.5;
   margin-left: 24px;
 }
-/* .description-link-img {
-} */
 
 @media screen and (min-width: 768px) {
   .description {
     background-image: url(/img/juce.png), url(/img/orangad.png);
     background-repeat: no-repeat;
     background-position: center right;
-    box-shadow: 0px -4px 24px 0px rgba(105, 105, 105, 0.1);
   }
   .apple-img {
     margin-left: 53px;
@@ -98,6 +108,12 @@
   .description-card-text {
     width: 252px;
   }
+  .shadow-apple-img::before {
+    bottom: -25px;
+    transform: translateX(-15%);
+    width: 156px;
+    height: 57px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -109,18 +125,15 @@
     padding-bottom: 124px;
     gap: 90px;
   }
-
   .apple-img {
     width: 380px;
     height: 536px;
     position: absolute;
     top: -110px;
   }
-
   .description-title {
     padding-top: 29px;
   }
-
   .description-box-img {
     display: flex;
     align-items: center;
@@ -138,7 +151,6 @@
     border-radius: 502px;
     background-color: var(--white);
   }
-
   .description-link {
     display: none;
   }
@@ -148,7 +160,6 @@
   .description-box {
     margin-top: 32px;
   }
-
   .description-img-fon {
     display: flex;
     align-items: center;
@@ -157,5 +168,11 @@
     height: 48px;
     border-radius: 48px;
     background-color: var(--white);
+  }
+  .shadow-apple-img::before {
+    bottom: 80px;
+    transform: translateX(-50%);
+    width: 252px;
+    height: 87px;
   }
 }

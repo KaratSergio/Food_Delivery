@@ -1,5 +1,6 @@
-.subscribe-img {
-  margin-top: 25px;
+.subscribe {
+ padding-top: 25px;
+ padding-bottom: 60px;
 }
 .sub-title {
   font-size: 28px;
@@ -33,7 +34,6 @@
   font-size: 13px;
   font-weight: 500;
   line-height: 1.5;
-  margin-bottom: 60px;
   margin-top: 20px;
   padding: 11px 22px;
   border: transparent;
@@ -47,6 +47,10 @@
 }
 
 @media screen and (min-width: 768px){
+  .subscribe {
+    padding-top: 62px;
+    padding-bottom: 100px;
+   }
   .sub-box-img {
     display: flex;
     justify-content: right;
@@ -67,7 +71,6 @@
     width: 520px;
     flex-direction: row;
     gap: 22px;
-    margin-bottom: 100px;
   }
   .sub-btn {
     margin-bottom: 0;

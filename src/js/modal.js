@@ -13,5 +13,6 @@
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
+    refs.modal.style.zIndex = '3';
   }
 })();
