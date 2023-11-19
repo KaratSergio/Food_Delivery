@@ -8,6 +8,7 @@
   font-size: 14px;
   line-height: 1.42;
   padding-top: 16px;
+  text-align: center;
 }
 .gallery-list {
   display: flex;
@@ -15,6 +16,9 @@
   align-items: center;
   gap: 20px;
   margin-top: 20px;
+}
+.gallery-item {
+  max-width: 225px;
 }
 .gallery-border {
   display: flex;
@@ -52,7 +56,7 @@
   }
 
   .gallery-border {
-    width: 334px;
+    width: 332px;
     height: 338px;
     border: 14px solid var(--yellow);
   }
