@@ -54,3 +54,27 @@
   width: 312px;
 }
 }
+
+@media screen and (min-width: 1280px) {
+  .reviews {
+    padding: 140px 32px 126px;
+    background-color: var(--yellow);
+  }
+  .reviews-list-box{
+    margin-top: 32px;
+    display: flex;
+    gap: 139px;
+  }
+  .reviews-list {
+    width: 501px;
+    background-color: var(--white);
+    border-radius: 0px 30px 30px 30px;
+    padding: 15px;
+}
+.reviews-text-comment {
+  width: 473px;
+}
+.reviews-stars-img {
+  margin: 0;
+}
+}

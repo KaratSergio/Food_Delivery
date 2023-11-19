@@ -3,10 +3,12 @@
 }
 .container {
 } */
+
 .apple-img {
-  margin:  auto;
+  margin: auto;
   padding-top: 60px;
 }
+
 .description-title {
   font-size: 28px;
   font-weight: 700;
@@ -71,7 +73,6 @@
 } */
 
 @media screen and (min-width: 768px) {
-
   .description {
     background-image: url(/img/juce.png), url(/img/orangad.png);
     background-repeat: no-repeat;
@@ -79,7 +80,7 @@
     box-shadow: 0px -4px 24px 0px rgba(105, 105, 105, 0.1);
   }
   .apple-img {
-margin-left: 53px;
+    margin-left: 53px;
   }
   .description-title {
     width: 526px;
@@ -96,5 +97,65 @@ margin-left: 53px;
   }
   .description-card-text {
     width: 252px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .description {
+    background-image: none;
+    background-color: var(--yellow);
+    display: flex;
+    padding-top: 167px;
+    padding-bottom: 124px;
+    gap: 90px;
+  }
+
+  .apple-img {
+    width: 380px;
+    height: 536px;
+    position: absolute;
+    top: -110px;
+  }
+
+  .description-title {
+    padding-top: 29px;
+  }
+
+  .description-box-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 550px;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    width: 550px;
+    height: 550px;
+    background-color: var(--yellow);
+    position: relative;
+  }
+  .description-border-img {
+    width: 502px;
+    height: 502px;
+    border-radius: 502px;
+    background-color: var(--white);
+  }
+
+  .description-link {
+    display: none;
+  }
+  .description-link-img {
+    display: none;
+  }
+  .description-box {
+    margin-top: 32px;
+  }
+
+  .description-img-fon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 48px;
+    background-color: var(--white);
   }
 }

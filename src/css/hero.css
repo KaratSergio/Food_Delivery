@@ -210,3 +210,47 @@
     margin-right: 20px;
   }
 }
+
+@media screen and (min-width: 1280px) {
+  .hero {
+    position: relative;
+  }
+
+  .hero-title {
+    padding-top: 159px;
+  }
+
+  .hero-text {
+    padding-top: 28px;
+  }
+
+  .hero-btn {
+    margin-top: 40px;
+    margin-bottom: 219px;
+  }
+
+  .slider-box {
+    position: absolute;
+    top: 14px;
+    right: 0;
+    margin-right: 16px;
+  }
+  .slide-off {
+    display: none;
+  }
+
+  .slider-container {
+    width: 580px;
+    height: 580px;
+    border: 26px solid var(--yellow);
+  }
+
+  .slide {
+    width: 528px;
+  }
+
+  .slider-btn-left,
+  .slider-btn-right {
+    display: none;
+  }
+}
