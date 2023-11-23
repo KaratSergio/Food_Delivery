@@ -7,6 +7,8 @@
   --yellow: #ffe550;
   --text_nav: #000000;
   --input_sub: #505050;
+  --transition: cubic-bezier(0.4, 0, 0.2, 1);
+  --color-error: #E74A3B;
 }
 
 body {
@@ -22,6 +24,34 @@ body {
   border-left: 4px solid rgba(105, 105, 105, 0.02);
   border-right: 4px solid rgba(105, 105, 105, 0.02);
 }
+
+/* INPUT CHECK ERROR */
+.icon-sub-box {
+  position: relative;
+}
+.icon-error {
+  position: absolute;
+  right: 0;
+  margin: -33px 3px 0 auto;
+  transition: fill 250ms var(--transition);
+  fill: transparent;
+}
+.error-input:not(:placeholder-shown):invalid {
+  border: 2px solid var(--color-error);
+  outline: none;
+  transition: border-color 250ms var(--transition);
+  color: var(--color-error);
+}
+.error-input:not(:placeholder-shown)+.icon-error {
+  fill: var(--color-error);
+  opacity: 0;
+}
+.error-input:not(:placeholder-shown):invalid+.icon-error {
+  fill: var(--color-error);
+  opacity: 1;
+}
+
+/* MEDIA */
 @media screen and (min-width: 768px)  {
   .container {
     max-width: 768px;

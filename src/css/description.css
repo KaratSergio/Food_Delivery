@@ -71,10 +71,12 @@
   border: 2px solid var(--green);
   background-color: var(--white);
   transition: border-color 1.2s;
+  transition: background-color 1.2s;
 }
 .description-btn:hover,
 .description-btn:focus {
   border-color: var(--yellow);
+  background-color: var(--light_green);
 }
 .description-link {
   font-size: 13.7px;

@@ -30,6 +30,9 @@
   border: 0.854px solid var(--yellow);
   background-color: var(--white);
 }
+.accent-icon-error{
+  margin: -33px 10px 0 auto;
+}
 .sub-btn {
   font-size: 13px;
   font-weight: 500;
@@ -78,6 +81,9 @@
   }
   .sub-input {
     width: 395px;
+  }
+  .accent-icon-error{
+    top: 0;
   }
 }
 

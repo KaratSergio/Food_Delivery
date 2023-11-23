@@ -8,15 +8,22 @@
       <p class="sub-text">
         Order now and receive 10% off your first meal with Enjoy Your Favorite Food From Anywhere. 
       </p>
-      <div class="sub-box-form">
-        <input
-          class="sub-input"
-          type="text"
-          placeholder="Enter your email"
-          name="subscribe"
-          id="#subscribe"
-        />
-        <button class="sub-btn">Subscribe</button>
-      </div>
+      <form class="sub-box-form" action="submit.php" method="post">
+        <div class="icon-sub-box">
+          <input
+            class="sub-input error-input"
+            type="email"
+            placeholder="Enter your email"
+            name="subscribe"
+            id="subscribe"
+            required
+              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+          />
+          <svg class="icon-error accent-icon-error" width="24" height="24">
+            <use href="./img/icons.svg#icon-error"></use>
+          </svg>
+        </div>
+        <button type="submit"  class="sub-btn">Subscribe</button>
+      </form>
     </div>
   </section>

@@ -1,114 +1,118 @@
 .footer {
-    background-image: url(/img/footer_mobile.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    box-shadow: 0px -4px 24px 0px rgba(105, 105, 105, 0.1);
-    padding-top: 64px;
-  }
-  .footer-nav-box {
-    display: flex;
-  }
-  .footer-logo-icon {
-    margin-right: 46px;
-  }
-  .footer-nav {
-    padding-top: 4px;
+  background-image: url(/img/footer_mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0px -4px 24px 0px rgba(105, 105, 105, 0.1);
+  padding-top: 64px;
+}
+.footer-nav-box {
+  display: flex;
+}
+.footer-logo-icon {
+  margin-right: 46px;
+}
+.footer-nav {
+  padding-top: 4px;
+}
+.footer-list-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-nav-link {
+  color: var(--text_nav);
+  font-size: 14px;
+  font-weight: 500;
+}
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+  color: var(--green);
+  font-size: 15px;
+}
+.footer-text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  padding-top: 40px;
+  padding-bottom: 12px;
+}
+.footer-input {
+  display: inline-flex;
+  height: 42px;
+  padding: 12px 128px 12px 12px;
+  align-items: center;
+  font-size: 12px;
+  border-radius: 30px;
+  border: 0.854px solid var(--yellow);
+  background-color: var(--white);
+}
+.footer-btn {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.5;
+  display: flex;
+  width: 103px;
+  height: 35px;
+  padding: 8px 22px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  border: 0.854px solid var(--green);
+  background-color: var(--white);
+  transition: border-color 1.2s;
+  transition: background-color 1.2s;
+  margin-top: 20px;
+}
+.footer-btn:hover,
+.footer-btn:focus {
+  border-color: var(--yellow);
+  background-color: var(--light_green);
+}
+.footer-text-policy {
+  font-size: 10px;
+  padding-top: 24px;
+}
+.footer-list {
+  display: flex;
+  gap: 30px;
+  padding-top: 60px;
+}
+.footer-item-link {
+  color: var(--green);
+  font-size: 10px;
+  text-decoration-line: underline;
+}
+.footer-text-bot {
+  font-size: 10px;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    background-image: url(/img/footer_tab.png);
+    background-size: auto;
+    background-position: bottom;
   }
   .footer-list-nav {
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
   }
-
-  .footer-nav-link {
-    color: var(--text_nav);
-    font-size: 14px;
-    font-weight: 500;
-  }
-  .footer-nav-link:hover,
-  .footer-nav-link:focus {
-    color: var(--green);
-    font-size: 15px;
-  }
-  .footer-text {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.5;
-    padding-top: 40px;
-    padding-bottom: 12px;
-  }
-  .footer-input {
-    display: inline-flex;
-    height: 42px;
-    padding: 12px 128px 12px 12px;
-    align-items: center;
-    font-size: 12px;
-    border-radius: 30px;
-    border: 0.854px solid var(--yellow);
-    background-color: var(--white);
-  }
-  .footer-btn {
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 1.5;
-    display: flex;
-    width: 103px;
-    height: 35px;
-    padding: 8px 22px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
-    border: 0.854px solid var(--green);
-    background-color: var(--white);
-    transition: border-color 1.2s;
-    margin-top: 20px;
-  }
-  .footer-btn:hover,
-  .footer-btn:focus {
-    border-color: var(--yellow);
-  }
-  .footer-text-policy {
-    font-size: 10px;
-    padding-top: 24px;
-  }
-  .footer-list {
-    display: flex;
-    gap: 30px;
-    padding-top: 60px;
-  }
-  .footer-item-link {
-    color: var(--green);
-    font-size: 10px;
-    text-decoration-line: underline;
-  }
-  .footer-text-bot {
-    font-size: 10px;
-    text-align: center;
-    padding-top: 40px;
-    padding-bottom: 60px;
-  }
-
-  @media screen and (min-width: 768px) {
-    .footer {
-      background-image: url(/img/footer_tab.png);
-      background-size: auto;
-      background-position: bottom;
-    }
-    .footer-list-nav {
-      flex-direction: row;
-      gap: 20px;
-    }
-    .footer-nav-box {
+  .footer-nav-box {
     align-items: center;
     gap: 114px;
-    }
-    .footer-input-box {
-      display: flex;
-      gap: 13px;
-    }
-    .footer-btn {
-      margin-top: 0;
-      height: 42px;
+  }
+  .footer-input-box {
+    display: flex;
+    gap: 13px;
+  }
+  .icon-error {
+    margin: 9px 12px 0 auto;
+  }
+  .footer-btn {
+    margin-top: 0;
+    height: 42px;
   }
   .footer-text-policy {
     font-size: 12px;

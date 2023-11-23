@@ -26,16 +26,23 @@
     </div>
     <div>
       <p class="footer-text">Subscribe</p>
-      <div class="footer-input-box">
-        <input
-          class="footer-input"
-          type="text"
-          name="Subscribe"
-          id=""
-          placeholder="Enter your email"
-        />
-        <button class="footer-btn">Subscribe</button>
-      </div>
+      <form class="footer-input-box" action="submit.php" method="post">
+        <div class="icon-sub-box">
+          <input
+            class="footer-input error-input"
+            type="email"
+            name="subscribe"
+            id="subscribe"
+            placeholder="Enter your email"
+            required
+            pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+          />
+          <svg class="icon-error" width="24" height="24">
+            <use href="./img/icons.svg#icon-error"></use>
+          </svg>
+        </div>
+        <button type="submit" class="footer-btn">Subscribe</button>
+      </form>
       <p class="footer-text-policy">
         By subscribing you agree to with our
         <span><a class="footer-item-link" href="#">Privacy Policy</a></span>

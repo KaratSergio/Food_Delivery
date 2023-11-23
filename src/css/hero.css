@@ -131,7 +131,7 @@
   align-items: center;
   border-radius: 30px;
   border: 2px solid var(--green);
-  margin: auto;
+  margin: 8px auto 0;
   transition: background-color 1.2s;
 }
 .modal-form-btn:hover,
