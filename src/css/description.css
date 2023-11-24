@@ -181,4 +181,7 @@
     width: 252px;
     height: 87px;
   }
+  .box-item {
+    gap: 15px;
+  }
 }

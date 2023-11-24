@@ -139,6 +139,8 @@
   background-color: var(--light_green);
 }
 
+
+
 @media screen and (min-width: 768px) {
   .hero-title {
     width: 480px;

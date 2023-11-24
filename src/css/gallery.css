@@ -1,3 +1,7 @@
+#menu {
+  scroll-margin-top: -50px;
+}
+
 .gallery-title {
   text-align: center;
   font-size: 28px;
@@ -34,6 +38,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  #menu {
+    scroll-margin-top: 1px;
+  }
+
   .gallery-title {
     font-size: 42px;
   }
@@ -56,7 +64,7 @@
   }
 
   .gallery-border {
-    width: 332px;
+    width: 321px;
     height: 338px;
     border: 14px solid var(--yellow);
   }
@@ -67,6 +75,9 @@
 }
 
 @media screen and (min-width: 1280px) { 
+  #menu {
+    scroll-margin-top: 30px;
+  }
   .gallery {
     padding: 120px 32px 101px;
   }
