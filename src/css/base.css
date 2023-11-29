@@ -26,7 +26,7 @@ body {
 }
 
 /* INPUT CHECK ERROR */
-.icon-sub-box {
+.icon-box-error {
   position: relative;
 }
 .icon-error {

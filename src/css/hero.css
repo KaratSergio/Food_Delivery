@@ -107,9 +107,14 @@
 .modal-input-box {
   position: relative;
 }
+.modal-input-box .icon-error {
+ top: 42px;
+ right: 6px;
+}
+
 .modal-input {
   width: 280px;
-  height: 48px;
+  height: 42px;
   border-radius: 30px;
   border: 1px solid var(--green);
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15) inset;
@@ -117,7 +122,7 @@
 }
 .modal-input-icon {
   position: absolute;
-  top: 12px;
+  top: 9px;
   left: 12px;
 }
 .modal-form-btn {
@@ -138,8 +143,6 @@
 .modal-form-btn:focus {
   background-color: var(--light_green);
 }
-
-
 
 @media screen and (min-width: 768px) {
   .hero-title {
@@ -202,6 +205,10 @@
     position: relative;
     margin-right: 20px;
   }
+  .modal-input-box .icon-error {
+    top: 0;
+    right: 0;
+   }
 }
 
 @media screen and (min-width: 1280px) {
